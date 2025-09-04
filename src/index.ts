@@ -94,7 +94,7 @@ interface ForecastResponse {
 
 // Create server instance
 const server = new McpServer({
-  name: "weather",
+  name: "demo-rest-mcp-server",
   version: "1.0.0",
 });
 
@@ -216,9 +216,6 @@ server.tool(
     }
   },
 );
-
-//create a mcp tool for mongo db operations
-
 // MongoDB Collection Management Tools
 server.tool(
   "list-collections",
